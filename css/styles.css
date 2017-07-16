@@ -1,0 +1,136 @@
+
+/*
+====================================
+------------------------------------
+    1. General
+    2. Typography
+    3. Home
+    4. Navigation
+    5. Deals
+    6. Flights
+    7. Packages
+    8. Hero Video 
+    9. Text Banner
+    10. Carousel Section
+    11. Footer
+-------------------------------------
+=====================================
+*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap */
+
+
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+    color:#282828;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body, html{
+    overflow-x:hidden;
+}
+
+/* Link style
+---------------------------------------------------------*/
+a {
+    color: #68c3a3;
+}
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    outline: none;
+    color: #333333;
+    text-decoration: none;
+}
+
+
+
+/* LIST STYLE
+-------------------------------------------------- */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+
+/* Transition elements
+-------------------------------------------------------- */
+
+a,
+.btn {
+	-webkit-transition: all 0.125s ease-in-out 0s;
+	-moz-transition: all 0.125s ease-in-out 0s;
+	-ms-transition: all 0.125s ease-in-out 0s;
+		-o-transition: all 0.125s ease-in-out 0s;
+			transition: all 0.125s ease-in-out 0s;
+}
+
+
+
+
+
+
+/* === Typography === */
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    margin:0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+
+
+
+/* Mobile First CSS
+---------------------------*/
+
+
+
+
+
+
+
