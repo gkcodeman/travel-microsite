@@ -1,8 +1,9 @@
-# travel-microsite
-
-
 
 # Project Title
+Fidelity Microsite
+
+
+# About Project
 
 A microsite project built for Fideltiy as a test.
 
