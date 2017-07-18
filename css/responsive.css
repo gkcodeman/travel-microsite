@@ -2,6 +2,7 @@
 @media (min-width: 576px) {
 	
 	
+	
 }
 
 
@@ -33,4 +34,9 @@
 
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+	.carousel-inner {
+			margin-left: 80px;
+	}
+
+}
