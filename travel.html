@@ -3,31 +3,36 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 			
 			
-			
-				<!--Custom CSS-->
+				<link rel="stylesheet" href="css/normalize.css">
+				<link rel="stylesheet" href="css/animate.css">
+				
+			<!--Custom CSS-->
 				<link rel="stylesheet" href="../travel-microsite/css/responsive.css">
 				<link rel="stylesheet" href="../travel-microsite/css/styles.css">
 			
   </head>
   <body>
    <section id="masthead">
-				<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+				<nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
   			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
+						
   			</button>
   				<a class="navbar-brand" href="#">Destinator</a>
   		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="#">Packages <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Features</a>
       <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      
     </div>
   	</div>
 			</nav>
@@ -35,14 +40,21 @@
 			
 			<!--Jumbotron--> 
 			<section id="jumbo">
-				<div class="jumbotron jumbotron-fluid">
-  			<video class="embed-responsive" controls id="bg-video" preload="metadata" muted="muted">
-     	<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" width="1024" height="552" type="video/mp4" />
+				<div class="jumbotron jumbotron-fluid centered-text">
+					<div id="video-wrap" class="video-wrap">
+  			<video autoplay loop class="embed-responsive" preload="metadata" muted="muted" id="my-video">
+     	<source src="vids/Perfect_Hour.mp4" />
+						<source src="vids/Perfect_Hour.ogv" />
+						<source src="vids/Perfect_Hour.webm" />
     	</video>
+					</div><!--/#video-wrap-->
     <div class="text-center jumbovidtext">
-					<h1 class="h4">VOLCANOES, HIDDEN BEACHES..</h1>
-					<p class="lead"><small>You name it and we will help get you there.</small></p>
-      <p><a class="btn center btn-primary btn-lg" id="botjumbo" href="#" role="button">Book Now</a></p>
+					<h1 class="h1 wow fadeInUp" data-wow-delay=".2s">VOLCANOES, HIDDEN BEACHES..</h1>
+					<p class="lead sub wow fadeInUp" data-wow-delay=".5s"><small>You name it and we will help get you there.</small></p>
+      <p class="wow fadeInUp" data-wow-delay="1s"><a class="btn center btn-primary btn-lg" id="btnJumbo" href="#" role="button">Book Now</a></p>
+						<div id="mouse" class="wow fadeIn" data-wow-duration="4s" data-wow-delay="2s">
+  					<div id="mouse-wheel"></div>
+						</div>
     </div>
 				</div>
 		 </section><!--#jumbo-->
@@ -72,8 +84,20 @@
    	<div class="carousel-item active">
      <div class="row">
        <div class="col-6">
+								
 									<a href="#" class="launch-modal" data-modal-id="modal-video">
-										<img class="img-fluid" src="img/alberta-2297204_1920.jpg" >
+										<img class="img-fluid shadow-box wow fadeInUp" src="img/alberta-2297204_1920.jpg">
+										
+										<div class="info-panel wow fadeInUp">
+											<div class="circle-plus">
+												<div class="plus1"></div>
+												<div class="plus2"></div>
+											</div><!--/.circle-plus-->
+											<p class="small travel-choice"><strong>COLORADO RESORT</strong> - $199/DAY<br><span class="sub-text">No place like the colorado mountains..</span></p>
+											<div class="line"></div>
+											<p class="small miles">19.6mi</p>
+											
+										</div><!--/.info-panel-->
 									</a>
 							
 								
@@ -81,7 +105,17 @@
        </div><!--/.col-6-->
        <div class="col-6">
          <a href="#" class="launch-modal" data-modal-id="modal-video">
-										<img class="img-fluid" src="img/cinque-terre-828614_1920.jpg" >
+										<img class="img-fluid shadow-box wow fadeInUp" src="img/cinque-terre-828614_1920.jpg" >
+										<div class="info-panel">
+											<div class="circle-plus">
+												<div class="plus1"></div>
+												<div class="plus2"></div>
+											</div><!--/.circle-plus-->
+											<p class="small travel-choice"><strong>COLORADO RESORT</strong> - $199/DAY<br><span class="sub-text">No place like the colorado mountains..</span></p>
+											<div class="line"></div>
+											<p class="small miles">19.6mi</p>
+											
+										</div><!--/.info-panel-->
 									</a>
        </div>
      </div><!--/.row-->
@@ -92,12 +126,32 @@
      <div class="row">
        <div class="col-6">
 								<a href="#" class="launch-modal" data-modal-id="modal-video">
-									<img class="img-fluid" src="img/img-test.jpg" >
+									<img class="img-fluid shadow-box" src="img/alberta-2297204_1920.jpg" >
+									<div class="info-panel">
+											<div class="circle-plus">
+												<div class="plus1"></div>
+												<div class="plus2"></div>
+											</div><!--/.circle-plus-->
+											<p class="small travel-choice"><strong>COLORADO RESORT</strong> - $199/DAY<br><span class="sub-text">No place like the colorado mountains..</span></p>
+											<div class="line"></div>
+											<p class="small miles">19.6mi</p>
+											
+										</div><!--/.info-panel-->
 									</a>
        </div>
        <div class="col-6">
          <a href="#" class="launch-modal" data-modal-id="modal-video">
-										<img class="img-fluid" src="img/img-test.jpg" >
+										<img class="img-fluid shadow-box" src="img/alberta-2297204_1920.jpg" >
+										<div class="info-panel">
+											<div class="circle-plus">
+												<div class="plus1"></div>
+												<div class="plus2"></div>
+											</div><!--/.circle-plus-->
+											<p class="small travel-choice"><strong>COLORADO RESORT</strong> - $199/DAY<br><span class="sub-text">No place like the colorado mountains..</span></p>
+											<div class="line"></div>
+											<p class="small miles">19.6mi</p>
+											
+										</div><!--/.info-panel-->
 									</a>
        </div>
      </div><!--/.row-->
@@ -106,12 +160,32 @@
      <div class="row">
        <div class="col-6">
 								<a href="#" class="launch-modal" data-modal-id="modal-video">
-										<img class="img-fluid" src="img/img-test.jpg" >
+										<img class="img-fluid shadow-box" src="img/alberta-2297204_1920.jpg" >
+										<div class="info-panel">
+											<div class="circle-plus">
+												<div class="plus1"></div>
+												<div class="plus2"></div>
+											</div><!--/.circle-plus-->
+											<p class="small travel-choice"><strong>COLORADO RESORT</strong> - $199/DAY<br><span class="sub-text">No place like the colorado mountains..</span></p>
+											<div class="line"></div>
+											<p class="small miles">19.6mi</p>
+											
+										</div><!--/.info-panel-->
 									</a>
        </div>
        <div class="col-6">
          <a href="#" class="launch-modal" data-modal-id="modal-video">
-										<img class="img-fluid" src="img/img-test.jpg" >
+										<img class="img-fluid shadow-box" src="img/alberta-2297204_1920.jpg" >
+										<div class="info-panel">
+											<div class="circle-plus">
+												<div class="plus1"></div>
+												<div class="plus2"></div>
+											</div><!--/.circle-plus-->
+											<p class="small travel-choice"><strong>COLORADO RESORT</strong> - $199/DAY<br><span class="sub-text">No place like the colorado mountains..</span></p>
+											<div class="line"></div>
+											<p class="small miles">19.6mi</p>
+											
+										</div><!--/.info-panel-->
 									</a>
        </div>
      </div><!--/.row-->
@@ -154,15 +228,15 @@
 			
 			
 			<section id="footer-main">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
 						<div class="col">
 							<nav>
 								<ul>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
+									<h6>Deals</h6>
+									<a><li>Disney</li></a>
+									<a><li>Banksaver Plan</li></a>
+									<a><li>Bring-a-Friend</li></a>
 								</ul>
 							
 							</nav>
@@ -171,10 +245,11 @@
 						<div class="col">
 							<nav>
 								<ul>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
+									<h6>Flights</h6>
+									<a><li>American</li></a>
+									<a><li>Delta</li></a>
+									<a><li>Jet Blue</li></a>
+									<a><li>Continental</li></a>
 								</ul>
 							
 							</nav>	
@@ -183,10 +258,9 @@
 						<div class="col">
 							<nav>
 								<ul>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
+									<h6>Packages</h6>
+									<a><li>Couples  Retreat</li></a>
+									<a><li>Yoga & Spa</li></a>
 								</ul>
 							
 							</nav>
@@ -195,11 +269,9 @@
 						<div class="col">
 							<nav>
 								<ul>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
-									<li>Test</li>
-									
+									<h6>Quick Links</h6>
+									<a><li>Locations</li></a>
+									<a><li>Contact</li></a>
 								</ul>
 							
 							</nav>
@@ -229,21 +301,19 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
+				
+				<script src="js/backgroundVideo.js"></script>
+				
+				<script src="js/scripts.js"></script>
+			
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 			
-			<script>
-	
-    // Activate Carousel - Stops the Carousel from Auto Transitioning
-    $("#carouselExampleControls").carousel({interval: false});
-				
-				
-				$('.launch-modal').on('click', function(e){
-    e.preventDefault();
-    $( '#' + $(this).data('modal-id') ).modal();
-				});
-		
-			</script>
+			
+			
+			<script src="js/wow.min.js"></script>
+			
+			
+			
   </body>
 </html>
