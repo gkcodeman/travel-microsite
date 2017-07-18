@@ -41,6 +41,12 @@ body, html{
     overflow-x:hidden;
 }
 
+.wow {
+   visibility: hidden;
+}
+
+
+
 /* Link style
 ---------------------------------------------------------*/
 a {
@@ -125,15 +131,252 @@ h6 {
 
 
 
+
+
+
 /* Mobile First CSS
 ---------------------------*/
 
+/* Masthead 
+--------------------------*/
 
-.carousel-indicators {
-	bottom: -30px;
-	/*figure out what changes the pagination colors*/
+.navbar {
+		background: transparent;
+		position: absolute;
+		top: 0px;
+		z-index: 1000;
+		width: 100%;
+
 }
 
+.navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-toggler {
+		border: none;
+	
+}
+
+
+
+
+
+/* Jumbotron Section 
+--------------------------*/
+.jumbovidtext {
+		position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+		color: #fff;
+		width: 600px;
+		z-index: 10;
+		
+}
+
+.jumbovidtext h1 {
+		font-size: 40px
+}
+
+.jumbotron {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		position: relative;
+		
+		
+		
+		
+}
+
+#btnJumbo {
+		background: transparent;
+		border: 1px solid #fff;
+		border-radius: 0;
+		transition: all .2s ease-in-out;
+}
+
+#btnJumbo:hover {
+		background: #29aae3;
+		border: 1px solid transparent;
+		
+}
+
+.sub {
+		color: #fefdfb;
+}
+
+
+/* Mouse Wheel CSS 
+-----------------------*/
+#mouse {
+  position: absolute;
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px; 
+  height: 50px;
+  background-color: none;
+  border: 2px solid #fff; 
+  border-radius: 16px; 
+		z-index: 20;
+}
+
+#mouse-wheel {
+  position: relative;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4px;
+  height: 10px; 
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-animation-name: mouseScroll;
+  animation-name: mouseScroll;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+  -webkit-animation-iteration-count: infinite;
+			-moz-animation-name: mouseScroll;
+  						animation-name: mouseScroll;
+  	-moz-animation-duration: 1s;
+  	-moz-animation-timing-function: linear;
+  	-moz-animation-play-state: running;
+  	-moz-animation-iteration-count: infinite;
+				-o-animation-name: mouseScroll;
+  					animation-name: mouseScroll;
+  		-o-animation-duration: 1s;
+				-o-animation-timing-function: linear;
+  		-o-animation-play-state: running;
+  		-o-animation-iteration-count: infinite;
+  
+  
+  
+}
+
+/* Jumbotron Keyframe Animations
+--------------------------------*/
+
+@-webkit-keyframes mouseScroll {
+	
+			0% {
+    
+    top: 10px;
+    opacity: 0;
+    
+    
+  }
+  
+  
+  30% {
+    
+    top: 20px;
+    opacity: 1;
+    
+  }
+  
+  100% {
+    top: 27px;
+    opacity: 0;
+  }
+	
+}
+
+@-moz-keyframes mouseScroll {
+	
+			0% {
+    
+    top: 10px;
+    opacity: 0;
+    
+    
+  }
+  
+  
+  30% {
+    
+    top: 20px;
+    opacity: 1;
+    
+  }
+  
+  100% {
+    top: 27px;
+    opacity: 0;
+  }
+	
+}
+
+
+@-o-keyframes mouseScroll {
+	
+			0% {
+    
+    top: 10px;
+    opacity: 0;
+    
+    
+  }
+  
+  
+  30% {
+    
+    top: 20px;
+    opacity: 1;
+    
+  }
+  
+  100% {
+    top: 27px;
+    opacity: 0;
+  }
+	
+}
+
+
+
+
+@keyframes mouseScroll {
+  
+  0% {
+    
+    top: 10px;
+    opacity: 0;
+    
+    
+  }
+  
+  
+  30% {
+    
+    top: 20px;
+    opacity: 1;
+    
+  }
+  
+  100% {
+    top: 27px;
+    opacity: 0;
+  }
+  
+  
+}
+
+
+
+
+
+/* CTA - Banner 
+--------------------------*/
+
+#cta-banner {
+		padding: 25px 0;
+		background: #29aae3;
+		color: #fff;
+		margin-bottom: 30px;
+		
+}
 
 
 
@@ -142,6 +385,8 @@ h6 {
 
 /* Modal
 --------------------------*/
+
+
  
 .modal-backdrop.in {
     filter: alpha(opacity=7);
@@ -181,16 +426,154 @@ h6 {
 
 
 
+
+
+
+/*travel section*/
+
+
+
+.info-panel {
+		position: relative;
+		top: -80px;
+		color: #fff;
+		background: rgba(127, 180, 212, 0.5);
+		height: 80px;
+		
+}
+
+.shadow-box {
+		-webkit-box-shadow: 0 1px 2px #777;
+			-moz-box-shadow: 0 2px 1px #777;
+				box-shadow: 0 2px 1px #777;
+}
+
+.circle-plus {
+		width: 40px;
+		height: 40px;
+		background-color: #29aae3;
+		border-radius: 100%;
+		position: absolute;
+		right: 25px;
+		top: -20px;
+		-webkit-box-shadow: 0 1px 2px #777;
+			-moz-box-shadow: 0 2px 1px #777;
+				box-shadow: 0 2px 1px #777;
+
+}
+
+.plus1 {
+		width: 19px;
+		height: 3px;
+		background: #fff;
+		position: relative;
+		top: 20px;
+		left: 11px;
+}
+
+.plus2 {
+		width: 3px;
+		height: 19px;
+		background: #fff;
+		position: relative;
+		top: 9px;
+		left: 19px;
+}
+
+
+.line{
+	width: 90px;
+	height: 1px;
+	background: #fff;
+	position: relative;
+	left: 10px;
+	top: -17px;
+}
+
+.travel-choice {
+		position: relative;
+		top: 15px;
+		left: 10px;
+		
+}
+
+.sub-text {
+		font-family: serif;
+		position: relative;
+		top:-14px;
+}
+
+.miles {
+		position: relative;
+		top: -17px;
+		left: 10px;
+		color: #fff;
+}
+
+
+
+
+
+/*pagination*/
+
+
+
+.carousel-indicators li {
+	background: #eee;
+	
+}
+
+li.active {
+	background: #ddd !important;
+}
+
+.carousel-control-prev {
+		display:none;
+}
+
+.carousel-control-next {
+		display:none;
+}
+
+
+
+
+
+
+
 /*footer main*/
 
 #footer-main {
-	background: url(../img/beach-lightened.jpg) no-repeat;
+	background: url(../img/the-beach.jpg) no-repeat;
 	background-size:cover;
 	background-position:center;
-	height: 200px;
+	height: 300px;
 	margin-top:50px;
 	
 
 }
+
+
+nav ul:first-child {
+		margin-top: 75px;
+		
+}
+
+nav ul h6:first-child {
+	margin-bottom: 15px;
+}
+
+nav ul a li {
+	color: #999;
+	transition: all 0.2s ease-in-out;
+}
+
+nav ul a li:hover {
+	color: #666;
+	
+}
+
+
+
 
 
